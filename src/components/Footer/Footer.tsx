@@ -1,31 +1,29 @@
-import { Container, Grid } from "@mui/material";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Footer.css'
+import { Container, Grid, Button, TextField} from "@mui/material";
+import { faGithub, faInstagram, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
-    <>
-    <Container>
-      <Grid container>
-        <p>Redes sociais</p>
-        <Grid item>
-          {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
+    <footer>
+      <Container>
+        <Grid container direction="row" justifyContent="space-around" alignItems="center">
+          
+          <Grid item>
+            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </Grid>
+          <Grid item>
+            <p>Entre em contato</p>
+            <TextField id="standard-basic" label="Email" variant="standard"></TextField>
+            <Button variant="contained">Siga-nos</Button>
+          </Grid>
         </Grid>
-        <Grid item>
 
-        </Grid>
-        <Grid item>
-
-        </Grid>
-        <Grid item>
-
-        </Grid>
-      </Grid>
-
-      <Grid container>
-        <p>Entre em contato</p>
-      </Grid>
-    </Container>
-    </>
+      </Container>
+    </footer>
   );
 };
 
