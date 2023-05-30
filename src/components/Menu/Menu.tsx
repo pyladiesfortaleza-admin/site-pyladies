@@ -1,21 +1,23 @@
 import "./Menu.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Sobre from "./pages/Sobre";
-import Participe from "./pages/Participe";
-import Navbar from "./components/Navbar";
-import Parceiros from './pages/Parceiros';
-import Contatos from './pages/Contatos';
+import MenuNavbar from "./MenuNavbar";
+import Participate from "../../pages/Participate/Participate";
+import Partners from "../../pages/Partners/Partners";
+import About from "../../pages/About/About";
+import Contacts from "../../pages/Contacts/Contacts";
+
+
 
 function Menu() {
   return (
     <Router>
-      <Navbar/>
+      <MenuNavbar/>
       <Routes>
-        <Route path="/" element={<Sobre />}></Route>
-        <Route path="/participe" element={<Participe />}></Route>
-        <Route path="/parceiros" element={<Parceiros />}></Route>
-        <Route path="/contatos" element={<Contatos />}></Route>
+        <Route path="/" element={<About />}></Route>
+        <Route path="/participe" element={<Participate />}></Route>
+        <Route path="/parceiros" element={<Partners />}></Route>
+        <Route path="/contatos" element={<Contacts />}></Route>
       </Routes>
     </Router>
   );
