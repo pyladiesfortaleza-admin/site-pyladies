@@ -1,7 +1,16 @@
 import './Footer.css'
-import { Container, Grid, Button, TextField} from "@mui/material";
+import { Container, Grid, TextField, Chip, Stack} from "@mui/material";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { faGithub, faInstagram, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#ffffff',
+    },
+  },
+});
 
 const Footer = () => {
   return (
@@ -10,15 +19,21 @@ const Footer = () => {
         <Grid container direction="row" justifyContent="space-around" alignItems="center">
           
           <Grid item>
-            <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faInstagram} />
-            <FontAwesomeIcon icon={faYoutube} />
-            <FontAwesomeIcon icon={faLinkedinIn} />
+              <FontAwesomeIcon className='socialMediaIcon' icon={faGithub} />
+              <FontAwesomeIcon className='socialMediaIcon' icon={faInstagram} />
+              <FontAwesomeIcon className='socialMediaIcon' icon={faYoutube} />
+              <FontAwesomeIcon className='socialMediaIcon' icon={faLinkedinIn} />
           </Grid>
           <Grid item>
             <p>Entre em contato</p>
-            <TextField id="standard-basic" label="Email" variant="standard"></TextField>
-            <Button variant="contained">Siga-nos</Button>
+            <p>Email</p>
+            <ThemeProvider theme={theme}>
+              <TextField className="sendEmail" id="standard-basic" variant="standard" color="primary" focused></TextField>
+            </ThemeProvider>
+            <br/><br/>
+            <Stack direction="row" spacing={1}>
+              <Chip className="sigaNos" label="Siga-nos" component="a" href='#' clickable/>
+            </Stack>
           </Grid>
         </Grid>
 

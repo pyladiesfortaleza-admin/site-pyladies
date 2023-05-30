@@ -1,4 +1,22 @@
 footer{
-    background-color: #5a189a;
-    color: #FFFFFF;
+    background-color: #371e66;
+    color: #ffffff;
+}
+
+footer .githubChip{
+    background-color: #ffffff;
+}
+
+footer .socialMediaIcon{
+    color: #000000;
+}
+
+footer .sigaNos {
+    background-color: #f58ed8;
+    color: #000000;
+    padding: 5%;
+}
+
+footer .sendEmail{
+    color: #ffffff;
 }
