@@ -1,0 +1,44 @@
+$purple: #371e66;
+$white: #ffffff;
+$pink: #f58ed8;
+$black: #000000;
+
+footer{
+    background-color: $purple;
+    color: $white;
+    padding: 5%;
+
+    .githubChip{
+        background-color: $white;
+    }
+    .socialMediaIcon{
+        color: $black;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .stackSigaNos{
+        font-weight: bold;
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+    .sendEmail{
+        color: $white;
+    }
+    .gridItem{
+        display: flex;
+    }
+    .title, .email{
+        font-size: large;
+    }
+    .stackSigaNos .sigaNos {
+        background-color: $pink;
+        color: $black;
+        padding: 9% 6% 9% 6%;
+    }
+    .gridItem .socialMedia{
+        background-color: $white;
+        border-radius: 50%;
+        padding: 4%;
+        margin: 5%;
+    }
+}

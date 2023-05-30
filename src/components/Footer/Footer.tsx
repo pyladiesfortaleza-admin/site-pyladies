@@ -1,4 +1,4 @@
-import './Footer.css'
+import './Footer.scss'
 import { Container, Grid, TextField, Chip, Stack} from "@mui/material";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { faGithub, faInstagram, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons'
