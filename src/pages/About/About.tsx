@@ -1,9 +1,9 @@
-function Partners() {
+function About() {
   return (
     <div>
-      <h1>Parceiros</h1>
+      <h1>Sobre</h1>
       <p>Conteúdo da página</p>
     </div>
   );
 }
-export default Partners;
+export default About;
