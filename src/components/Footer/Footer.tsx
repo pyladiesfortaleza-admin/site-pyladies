@@ -18,20 +18,27 @@ const Footer = () => {
       <Container>
         <Grid container direction="row" justifyContent="space-around" alignItems="center">
           
-          <Grid item>
-              <FontAwesomeIcon className='socialMediaIcon' icon={faGithub} />
-              <FontAwesomeIcon className='socialMediaIcon' icon={faInstagram} />
-              <FontAwesomeIcon className='socialMediaIcon' icon={faYoutube} />
-              <FontAwesomeIcon className='socialMediaIcon' icon={faLinkedinIn} />
+          <Grid item className='gridItem'>
+            <div className='socialMedia'>
+              <a href='https://github.com/pyladiesfortaleza'><FontAwesomeIcon className='socialMediaIcon' icon={faGithub} /></a>
+            </div>
+            <div className='socialMedia'>
+              <a href='https://www.instagram.com/pyladiesfortaleza/'><FontAwesomeIcon className='socialMediaIcon' icon={faInstagram} /></a>
+            </div>
+            <div className='socialMedia'>
+              <a href='https://www.youtube.com/c/PyLadiesFortaleza'><FontAwesomeIcon className='socialMediaIcon' icon={faYoutube} /></a>
+            </div>
+            <div className='socialMedia'>
+              <a href='https://www.linkedin.com/company/pyladiesfortaleza/'><FontAwesomeIcon className='socialMediaIcon' icon={faLinkedinIn} /></a>
+            </div>
           </Grid>
           <Grid item>
-            <p>Entre em contato</p>
-            <p>Email</p>
+            <p className='title'>Entre em contato</p>
+            <p className='email'>Email</p>
             <ThemeProvider theme={theme}>
               <TextField className="sendEmail" id="standard-basic" variant="standard" color="primary" focused></TextField>
             </ThemeProvider>
-            <br/><br/>
-            <Stack direction="row" spacing={1}>
+            <Stack className="stackSigaNos" direction="row" spacing={1}>
               <Chip className="sigaNos" label="Siga-nos" component="a" href='#' clickable/>
             </Stack>
           </Grid>
