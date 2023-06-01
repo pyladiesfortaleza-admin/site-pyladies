@@ -1,0 +1,26 @@
+$ligth-puple: #5d448c;
+$ligth-pink: #c986c0;
+$white: #fdfbfd;
+
+#CallAction {
+    background-color: $ligth-puple;
+    padding: 5%;
+
+    .stackWhatssap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .whatssap{
+        padding: 1.75rem 0.75rem 1.75rem 0.75rem;
+        border-radius: 5rem;
+        font-size: 1.2rem;
+    }
+    .whatssapIcon{
+        font-size: 2.5rem;
+    }
+    .stackWhatssap .whatssap, .whatssapIcon {
+        background-color: $ligth-pink;
+        color: $white;
+    }
+}
