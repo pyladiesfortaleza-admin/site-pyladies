@@ -20,16 +20,16 @@ const Footer = () => {
           
           <Grid item className='gridItem'>
             <div className='socialMedia'>
-              <a href='https://github.com/pyladiesfortaleza'><FontAwesomeIcon className='socialMediaIcon' icon={faGithub} /></a>
+              <a href='https://github.com/pyladiesfortaleza' target='_blank'><FontAwesomeIcon className='socialMediaIcon' icon={faGithub} /></a>
             </div>
             <div className='socialMedia'>
-              <a href='https://www.instagram.com/pyladiesfortaleza/'><FontAwesomeIcon className='socialMediaIcon' icon={faInstagram} /></a>
+              <a href='https://www.instagram.com/pyladiesfortaleza/' target='_blank'><FontAwesomeIcon className='socialMediaIcon' icon={faInstagram} /></a>
             </div>
             <div className='socialMedia'>
-              <a href='https://www.youtube.com/c/PyLadiesFortaleza'><FontAwesomeIcon className='socialMediaIcon' icon={faYoutube} /></a>
+              <a href='https://www.youtube.com/c/PyLadiesFortaleza' target='_blank'><FontAwesomeIcon className='socialMediaIcon' icon={faYoutube} /></a>
             </div>
             <div className='socialMedia'>
-              <a href='https://www.linkedin.com/company/pyladiesfortaleza/'><FontAwesomeIcon className='socialMediaIcon' icon={faLinkedinIn} /></a>
+              <a href='https://www.linkedin.com/company/pyladiesfortaleza/' target='_blank'><FontAwesomeIcon className='socialMediaIcon' icon={faLinkedinIn} /></a>
             </div>
           </Grid>
           <Grid item>
@@ -39,7 +39,7 @@ const Footer = () => {
               <TextField className="sendEmail" id="standard-basic" variant="standard" color="primary" focused></TextField>
             </ThemeProvider>
             <Stack className="stackSigaNos" direction="row" spacing={1}>
-              <Chip className="sigaNos" label="Siga-nos" component="a" href='#' clickable/>
+              <Chip className="sigaNos" label="Siga-nos" component="a" href='#' target='_blank' clickable/>
             </Stack>
           </Grid>
         </Grid>

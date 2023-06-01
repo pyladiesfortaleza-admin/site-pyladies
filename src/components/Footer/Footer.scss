@@ -17,8 +17,7 @@ footer{
         width: 2.5rem;
     }
     .stackSigaNos{
-        font-weight: bold;
-        margin-left: 50%;
+        margin-left: 38%;
         margin-top: 5%;
     }
     .sendEmail{
@@ -28,16 +27,17 @@ footer{
         display: flex;
     }
     .title, .email{
-        font-size: large;
+        font-size: 1.25rem;
     }
     .stackSigaNos .sigaNos {
         background-color: $pink;
         color: $black;
-        padding: 9% 6% 9% 6%;
+        padding: 1.25rem 1rem 1.25rem 1rem;
+        font-size: 1rem;
     }
     .gridItem .socialMedia{
         background-color: $white;
-        border-radius: 50%;
+        border-radius: 5rem;
         padding: 4%;
         margin: 5%;
     }
