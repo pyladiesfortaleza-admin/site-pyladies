@@ -1,4 +1,4 @@
-import Footer from "../../components/Footer";
+import NewFooter from "../../components/Footer/NewFooter";
 import Header from "../../components/Header";
 import SectionAbout from "./SectionAbout";
 import SectionCallAction from "./SectionCallAction";
@@ -21,7 +21,7 @@ const Home = () => {
 
       <SectionCallAction />
 
-      <Footer />
+      <NewFooter />
     </>
   );
 };
