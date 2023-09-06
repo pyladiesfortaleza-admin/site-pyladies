@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import Menu from "../../components/Menu/Menu";
 import SectionAbout from "./SectionAbout";
 import SectionCallAction from "./SectionCallAction";
 import SectionLadies from "./SectionLadies";
@@ -10,6 +11,8 @@ const Home = () => {
   return (
     <>
       <Header />
+
+      <Menu/>
 
       <SectionAbout />
 
